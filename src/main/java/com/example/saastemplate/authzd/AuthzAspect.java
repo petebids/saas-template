@@ -39,7 +39,7 @@ public class AuthzAspect {
 
         PermissionService.CheckPermissionResponse response = permissionsService.checkPermission(request);
 
-        if (response.getPermissionship().getNumber() < = 1) {
+        if (response.getPermissionship().getNumber() <=  1) {
             throw new RuntimeException();
 
         }
